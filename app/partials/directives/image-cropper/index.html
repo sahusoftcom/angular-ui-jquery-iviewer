@@ -1,0 +1,13 @@
+<div ng-style="cropperWrapper">
+	<div ng-style="cropperBtnWrapper">
+		<a class="btn" ng-click="zoomIn()"><i class="icon-zoom-in"></i></a>
+		<a class="btn" ng-click="zoomOut()"><i class="icon-zoom-out"></i></a>
+		<a class="btn" ng-click="zoomRotate()"><i class="icon-rotate-right"></i></a>
+		<a class="btn pull-right" ng-click="trash()"><i class="icon-trash"></i></a>
+	</div>
+	<div ng-style="imageStyleWrapper">
+		<div jqyoui-draggable="{animate:true, onStop:'ondrapstop'}" data-jqyoui-options data-drag="true" ng-style="imageStyle" ng-model="imgdragdata">
+			<img src="{{src}}" alt="Image name" style="max-width:none;" />
+		</div>
+	</div>
+</div>

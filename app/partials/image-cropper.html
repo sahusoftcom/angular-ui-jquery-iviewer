@@ -1,0 +1,63 @@
+This is for image cropper page
+<br />
+<hr />
+<!-- Working Directive -->
+<imagecropper src="http://bestclipartblog.com/clipart-pics/-test-clipart-9.jpg" scale="1" left="0" top="0" mywidth="200" myheight="200" scalestep="0.05"></imagecropper>
+<!-- End Working Directive -->
+<hr />
+<br />
+
+<!-- Draft HTML & CSS Layout -->
+
+<style type="text/css">
+.img-crop-icons {
+	margin-bottom: 10px;
+}
+.img-crop {
+	width:100%;
+	overflow: hidden;
+	max-height: 300px;
+	border:solid 2px #ccc;
+}
+
+.img-crop img {
+	max-width: none;
+	position: relative;
+	/*top: -100px;*/
+	/*left:-100px;*/
+
+	zoom: 0.4;
+	-moz-transform: scale(0.4);
+	-webkit-transform: scale(0.4);
+	-o-transform: scale(0.4);
+
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+}
+</style>
+<h3> Dummy HTML and CSS only </h3>
+<div class="row-fluid">
+	<div class="span3">
+		<div class="img-crop-wrapper">
+			<div class="img-crop-icons">
+				<a class="btn"><i class="icon-zoom-in"></i></a>
+				<a class="btn"><i class="icon-zoom-out"></i></a>
+				<a class="btn"><i class="icon-rotate-right"></i></a>
+				<a class="btn pull-right"><i class="icon-trash"></i></a>
+			</div>
+			
+			<div class="img-crop">
+				<img class="thumbnail" src="http://bestclipartblog.com/clipart-pics/-test-clipart-9.jpg" alt="Image name" />
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Layout -->
+
+<hr />
+Sample Code:
+<br />
+	
+	imagecropper src="image-path" scale="1" offset-x="0" offset-y="0" width="200" height="200"
